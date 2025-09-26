@@ -58,6 +58,8 @@ export default function ProfilePage() {
       <p><b>積分：</b>{profile?.points ?? 0}</p>
 
       <div style={{ display: "flex", gap: 12, marginTop: 16 }}>
+  <a href="/roadmap">前往學習地圖</a>
+  {" | "}
         <a href="/">回首頁</a>
         {!profile?.nickname && <button onClick={saveNickname}>設定暱稱</button>}
         <button onClick={logout}>登出</button>
